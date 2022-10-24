@@ -1,0 +1,16 @@
+domain: dipankar.k8s.io
+layout:
+- go.kubebuilder.io/v3
+projectName: demo-crd-controller-k8s
+repo: github.com/dipankardas011/demo-crd-controller-k8s
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: dipankar.k8s.io
+  group: webapp
+  kind: Guestbook
+  path: github.com/dipankardas011/demo-crd-controller-k8s/api/v1
+  version: v1
+version: "3"
