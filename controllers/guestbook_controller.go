@@ -33,9 +33,9 @@ type GuestbookReconciler struct {
 	Scheme *runtime.Scheme
 }
 
-//+kubebuilder:rbac:groups=webapp.dipankar.k8s.io,resources=guestbooks,verbs=get;list;watch;create;update;patch;delete
-//+kubebuilder:rbac:groups=webapp.dipankar.k8s.io,resources=guestbooks/status,verbs=get;update;patch
-//+kubebuilder:rbac:groups=webapp.dipankar.k8s.io,resources=guestbooks/finalizers,verbs=update
+//+kubebuilder:rbac:groups=webapp.my.crd.dipankar,resources=guestbooks,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=webapp.my.crd.dipankar,resources=guestbooks/status,verbs=get;update;patch
+//+kubebuilder:rbac:groups=webapp.my.crd.dipankar,resources=guestbooks/finalizers,verbs=update
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to
 // move the current state of the cluster closer to the desired state.

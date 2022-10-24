@@ -1,4 +1,4 @@
-apiVersion: webapp.dipankar.k8s.io/v1
+apiVersion: webapp.my.crd.dipankar/v1
 kind: Guestbook
 metadata:
   labels:
